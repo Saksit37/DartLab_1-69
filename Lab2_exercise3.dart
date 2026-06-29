@@ -11,7 +11,7 @@ void main() {
   print("-" * 60);
   print(" ");
 
-  Map<String, int> studentscores = {"Math": 67, "Chemical": 23, "Biology": 59};
+  Map<String, int> studentscores = {"Math": 67, "Chemical": 23, "Biology": 19};
 
   print("My Math score is = ${studentscores["Math"]}");
 
@@ -29,4 +29,11 @@ void main() {
   print(" ");
   print("-" * 60);
   print(" ");
+
+  print("All score than 50 scores");
+  for (var score in studentscores.entries) {
+    if (score.value > 50) {
+      print("${score.key} : ${score.value}");
+    }
+  }
 }
