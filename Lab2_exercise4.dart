@@ -3,6 +3,7 @@ void main(){
   String city = "Nakorn Sawan"; //ประกาศตัวแปร (non-nullable)
 
   int middleNameLength = middleName?.length ?? 0; //พิมพ์ความยาวของ middleName ถ้า middleName เป็น null ให้ใช้ค่า 0 แทน
+  print(" ");
   print("Middle name length : $middleNameLength");
 
   print("City length : ${city.length}"); //พิมพ์ความยาวของ city
