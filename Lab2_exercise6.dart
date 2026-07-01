@@ -27,10 +27,10 @@ void main() {
   print("\n=== Area ===");
   // executeOperation(7, 5, areaRectangle);
   // executeOperation(8, 6, areaTriangle);
-  print("Area Rectangle : ${areaRectangle(7, 5)}");
-  print("Area Triangle : ${areaTriangle(8, 6)}");
-  print("Area Cylinder : ${areaCylinder(5, 3)}");
+  print("Area Rectangle : ${areaRectangle(7, 5)} ตารางเซนติเมตร");
+  print("Area Triangle : ${areaTriangle(8, 6)} ตารางเซนติเมตร");
+  print("Area Cylinder : ${areaCylinder(5, 3)} ตารางเซนติเมตร");
 
   print("\n=== Volume ===");
-  print("Volume Cylinder : ${volumeCylinder(5, 3)}");
+  print("Volume Cylinder : ${volumeCylinder(5, 3)} ลูกบาศก์เซนติเมตร");
 }
