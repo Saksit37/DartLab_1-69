@@ -21,7 +21,7 @@ void executeOperation(int a, int b, int Function(int, int) operation) {
   //ปริมาตรของสี่เหลี่ยมผืนผ้า ไม่มี เพราะเป็นรูปสองมิติ
   //ปริมาตรของสามเหลี่ยม ไม่มี เพราะเป็นรูปสองมิติ
 
-  
+ 
 
 void main() {
   print("\n=== Area ===");
