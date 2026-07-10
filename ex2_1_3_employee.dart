@@ -40,7 +40,7 @@ void main() {
   ];
   
 
-  print("\n======รายชื่อพนักงานและเงินเดือน======");
+  print("\n====== รายชื่อพนักงานและเงินเดือน ======");
   for (var employee in employees) {
     print("ชื่อ : ${employee.name} ");
     print("ได้รับเงินเดือน : ${employee.calculateSalary()} บาท");
