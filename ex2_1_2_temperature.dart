@@ -9,7 +9,7 @@ class Temperature {
     if (value >= -273.15) {
       _celsius = value;
     } else {
-      print('อุณหภูมิจะต่ำกว่า -273.15(ศูนย์สัมบูรณ์) องศาเซลเซียสไม่ได้');
+      print("\nอุณหภูมิจะต่ำกว่า -273.15(ศูนย์สัมบูรณ์) องศาเซลเซียสไม่ได้");
     }
   }
 
@@ -17,26 +17,38 @@ class Temperature {
 
 }
 
+// void main() {
+//   Temperature temp = Temperature(25.0);
+
+//   print("------------------------------");
+//   print("Celsius      : ${temp.celsius} °C");
+//   print("Fahrenheit   : ${temp.fahrenheit} °F");
+
+//   print("\n================================");
+//   print("ลองทดสอบอุณหภูมิที่ต่ำกว่า -273.15 °C");
+//   print("================================");
+//   print("ให้เป็น         : -300.0 °C");
+
+//   temp.celsius = -300.0;
+
+//   print("\n------------------------------");
+//   print("อุณหภูมิปัจจุบัน");
+//   print("------------------------------");
+//   print("Celsius      : ${temp.celsius} °C");
+//   print("Fahrenheit   : ${temp.fahrenheit} °F");
+
+//   print("\n================================");
+// }
 void main() {
-  Temperature temp = Temperature(25.0);
+  Temperature temp = Temperature(45.0);
+  print("เริ่มต้น : ${temp.celsius} °C");
+  print("องศาฟาเรนไฮต์ : ${temp.fahrenheit} °F");
 
-  print("\nอุณหภูมิเริ่มต้น");
-  print("------------------------------");
-  print("Celsius      : ${temp.celsius} °C");
-  print("Fahrenheit   : ${temp.fahrenheit} °F");
+  temp.celsius = 100;
+  print("\nเปลี่ยนเป็น : ${temp.celsius} °C");
+  print("องศาฟาเรนไฮต์ : ${temp.fahrenheit} °F");
 
-  print("\n================================");
-  print("ลองทดสอบอุณหภูมิที่ต่ำกว่า -273.15 °C");
-  print("================================");
-  print("ให้เป็น         : -300.0 °C");
-
-  temp.celsius = -300.0;
-
-  print("\n------------------------------");
-  print("อุณหภูมิปัจจุบัน");
-  print("------------------------------");
-  print("Celsius      : ${temp.celsius} °C");
-  print("Fahrenheit   : ${temp.fahrenheit} °F");
-
-  print("\n================================");
+  // ลองทดสอบอุณหภูมิที่ต่ำกว่า -273.15 °C
+  temp.celsius = -300;
+  print("ค่าปัจจุบัน : ${temp.celsius} °C");
 }
